@@ -13,6 +13,8 @@
 		DC1CECA1284245E70001798C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1CEC9F284245E70001798C /* Main.storyboard */; };
 		DC1CECA3284245E80001798C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1CECA2284245E80001798C /* Assets.xcassets */; };
 		DC1CECA6284245E80001798C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1CECA4284245E80001798C /* LaunchScreen.storyboard */; };
+		DC462949284D061700A12141 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC462948284D061700A12141 /* Petition.swift */; };
+		DC46294B284D068C00A12141 /* PetitionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC46294A284D068C00A12141 /* PetitionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DC1CECA2284245E80001798C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC1CECA5284245E80001798C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC1CECA7284245E80001798C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC462948284D061700A12141 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
+		DC46294A284D068C00A12141 /* PetitionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		DC1CEC98284245E60001798C /* Whitehouse Petitions */ = {
 			isa = PBXGroup;
 			children = (
+				DC46294C284D06C400A12141 /* Model */,
 				DC1CEC99284245E60001798C /* AppDelegate.swift */,
 				DC1CEC9B284245E60001798C /* SceneDelegate.swift */,
 				DC1CEC9D284245E60001798C /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				DC1CECA7284245E80001798C /* Info.plist */,
 			);
 			path = "Whitehouse Petitions";
+			sourceTree = "<group>";
+		};
+		DC46294C284D06C400A12141 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC462948284D061700A12141 /* Petition.swift */,
+				DC46294A284D068C00A12141 /* PetitionList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC1CEC9E284245E60001798C /* ViewController.swift in Sources */,
+				DC462949284D061700A12141 /* Petition.swift in Sources */,
+				DC46294B284D068C00A12141 /* PetitionList.swift in Sources */,
 				DC1CEC9A284245E60001798C /* AppDelegate.swift in Sources */,
 				DC1CEC9C284245E60001798C /* SceneDelegate.swift in Sources */,
 			);

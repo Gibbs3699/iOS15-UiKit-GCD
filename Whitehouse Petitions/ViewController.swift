@@ -9,13 +9,29 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-    var petitions = [String]()
+    var petitions = [Petition]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+        let urlString = "https://www.hackingwithswift.com/samples/petitions-1.json"
+        
+        if let url = URL(string: urlString) {
+            if let data = try? Data(contentsOf: url) {
+                parse(json: data)
+            }
+        }
     }
 
+    func parse(json: Data) {
+        let decoder = JSONDecoder()
+        
+        if let jsonPetitions = try? decoder.decode(PetitionList.self, from: json) {
+            petitions = jsonPetitions.results
+            tableView.reloadData()
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return petitions.count
     }
@@ -24,8 +40,9 @@ class ViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        cell.textLabel?.text = "Title here"
-        cell.detailTextLabel?.text = "Detail here"
+        let petition = petitions[indexPath.row]
+        cell.textLabel?.text = petition.title
+        cell.detailTextLabel?.text = petition.body
         return cell
     }
 
