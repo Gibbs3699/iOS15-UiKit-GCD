@@ -15,6 +15,7 @@
 		DC1CECA6284245E80001798C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1CECA4284245E80001798C /* LaunchScreen.storyboard */; };
 		DC462949284D061700A12141 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC462948284D061700A12141 /* Petition.swift */; };
 		DC46294B284D068C00A12141 /* PetitionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC46294A284D068C00A12141 /* PetitionList.swift */; };
+		DC46294E284D0B6400A12141 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC46294D284D0B6400A12141 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DC1CECA7284245E80001798C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC462948284D061700A12141 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
 		DC46294A284D068C00A12141 /* PetitionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionList.swift; sourceTree = "<group>"; };
+		DC46294D284D0B6400A12141 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				DC1CECA2284245E80001798C /* Assets.xcassets */,
 				DC1CECA4284245E80001798C /* LaunchScreen.storyboard */,
 				DC1CECA7284245E80001798C /* Info.plist */,
+				DC46294D284D0B6400A12141 /* DetailViewController.swift */,
 			);
 			path = "Whitehouse Petitions";
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				DC1CEC9E284245E60001798C /* ViewController.swift in Sources */,
 				DC462949284D061700A12141 /* Petition.swift in Sources */,
 				DC46294B284D068C00A12141 /* PetitionList.swift in Sources */,
+				DC46294E284D0B6400A12141 /* DetailViewController.swift in Sources */,
 				DC1CEC9A284245E60001798C /* AppDelegate.swift in Sources */,
 				DC1CEC9C284245E60001798C /* SceneDelegate.swift in Sources */,
 			);
